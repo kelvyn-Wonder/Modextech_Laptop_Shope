@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style/style.css">
+  <title>Home</title>
+  <!--Google Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!--font Awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--Glide js-->
+<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+
+<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+
+<!--Animate on scroll-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+<body>
+  <header class="header" id="header">
+    <!--Navigation bar start-->
+    <div class="navigation">
+      <div class="container">
+        <nav class="nav">
+           <div class="nav_humburger">
+            <svg>
+              <i class="fa-solid fa-bars"></i>
+            </svg>
+           </div>
+           <div class="nav_logo">
+            <a href="#" class="scroll-link">Modextech</a>
+           </div>
+
+           <div class="nav_menu">
+            <div class="menu_top">
+              <span class="nav_category">Modextech</span>
+              <a href="#" class="close_toggle">
+                <svg>
+                  <i class="fa-solid fa-close"></i>
+                </svg>
+              </a>
+            </div>
+
+            <ul class="nav_list">
+              <li class="nav_item">
+                <a href="#header" class="nav_link scroll-link">Home</a>
+              </li>
+  
+              <li class="nav_item">
+                <a href="#catagory" class="nav_link
+                scroll-link">Category</a>
+              </li>
+  
+              <li class="nav_item">
+                <a href="#news" class="nav_link scroll-link">Blog</a>
+              </li>
+  
+              <li class="nav_item">
+                <a href="#contact" class="nav_link scroll-link">Contact</a>
+              </li>
+             </ul>
+           </div>
+          
+           <div class="nav_icons">
+            <a href="#" class="icon_item">
+              <svg>
+                <i class="fa-solid fa-user"></i>
+              </svg>
+            </a>
+
+            <a href="#" class="icon_item">
+              <svg>
+                <i class="fa-solid fa-search"></i>
+              </svg>
+            </a>
+
+            <a href="#" class="icon_item">
+              <svg>
+                <i class="fa-solid fa-shopping-basket"></i>
+              </svg>
+              <span id="cart_total">0</span>
+            </a>
+           </div>
+        </nav>
+      </div>
+    </div>
+
+
+    <!--Hero Area-->
+   <div class="hero">
+    <div class="glide" id="glide_1">
+      <div class="glide_track" data-glide-el="track">
+        <ul class="glide_slides">
+          <li class="glide_slide">
+            <div class="hero_center">
+              <div class="hero_left">
+                <h1>Modextech Computers and IT Solution</h1>
+                <p>Empowering Businesses and Individuals with Innovative IT Solutions</p>
+                <a href="#"><button class="hero_btn">SHOP NOW</button></a>
+              </div>
+              <div class="hero_right">
+                <div class="hero_img-container">
+                  
+                  <img src="/Image/Laptop desktop.png" alt="" class="banner_01">
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          
+        </ul>
+      </div>
+
+      <div class="glide__bullets" data-glide-el="controls[nav]">
+        <button class="glide__bullet" data-glide-dir="=0"></button>
+        <button class="glide__bullet" data-glide-dir="=1"></button>
+      </div>
+
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+          <svg>
+            <i class="fa-solid fa-arrow-left"></i>
+          </svg>
+        </button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+          <svg>
+            <i class="fa-solid fa-arrow-right"></i>
+          </svg>
+        </button>
+      </div>
+    </div>
+   </div>
+  </header>
+
+  <!--Main -->
+  <main id="main">
+    <!--collection-->
+    <section class="section collection" id="collection">
+      <div class="container">
+        <div class="collection_container">
+          <div class="collection_box">
+            <div class="img_container">
+              <img src="/Image/HP laptop.jpeg" alt="" class="collection_02">
+            </div>
+            <div class="collection_content">
+              <div class="collection_data">
+                <span>New Laptops Introduced</span>
+                <h1>HP LAPTOP</h1>
+                <a href="">SHOP NOW</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="collection_box">
+            <div class="img_container">
+              <img src="/Image/Laptop.png" alt="" class="collection_02">
+            </div>
+            <div class="collection_content">
+              <div class="collection_data">
+                <span>New Laptops Introduced</span>
+                <h1>HP LAPTOP</h1>
+                <a href="">SHOP NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--Glide on scroll-->
+  <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+  <!--Animate on scrool-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/js/index.js"></script>
+  <script src="/js/slide.js"></script>
+  <script src="/js/product.js"></script>
+</body>
+</html>
