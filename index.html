@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style/style.css">
   <title>Home</title>
+
   <!--Google Font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,76 +20,56 @@
 <!--Animate on scroll-->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-
 </head>
 <body>
   <header class="header" id="header">
     <!--Navigation bar start-->
-    <div class="navigation">
-      <div class="container">
-        <nav class="nav">
-           <div class="nav_humburger">
-            <svg>
-              <i class="fa-solid fa-bars"></i>
-            </svg>
-           </div>
-           <div class="nav_logo">
-            <a href="#" class="scroll-link">Modextech</a>
-           </div>
-
-           <div class="nav_menu">
-            <div class="menu_top">
-              <span class="nav_category">Modextech</span>
-              <a href="#" class="close_toggle">
-                <svg>
-                  <i class="fa-solid fa-close"></i>
-                </svg>
+    <nav>
+      <div id="navbar">
+        <div id="navbar-logo">
+          <img src="Logo1-removebg-preview.png" alt="logo image">
+        </div>
+        <div id="navbar-links">
+          <ul>
+            <li>
+              <a href="index.html">
+                Home
               </a>
-            </div>
-
-            <ul class="nav_list">
-              <li class="nav_item">
-                <a href="#header" class="nav_link scroll-link">Home</a>
-              </li>
-  
-              <li class="nav_item">
-                <a href="#catagory" class="nav_link
-                scroll-link">Category</a>
-              </li>
-  
-              <li class="nav_item">
-                <a href="#news" class="nav_link scroll-link">Blog</a>
-              </li>
-  
-              <li class="nav_item">
-                <a href="#contact" class="nav_link scroll-link">Contact</a>
-              </li>
-             </ul>
-           </div>
-          
-           <div class="nav_icons">
-            <a href="#" class="icon_item">
-              <svg>
-                <i class="fa-solid fa-user"></i>
-              </svg>
+            </li>
+            <li>
+              <a href="#">
+                Products
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                About
+              </a>
+            </li>
+          </ul>
+          <div id="navbar-tools">
+            <a id="cart-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg>
+                <span>0</span>
             </a>
-
-            <a href="#" class="icon_item">
-              <svg>
-                <i class="fa-solid fa-search"></i>
+            <a id="wishlist-link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 16 16">
+                <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.6 7.6 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
               </svg>
+                <span>0</span>
             </a>
-
-            <a href="#" class="icon_item">
-              <svg>
-                <i class="fa-solid fa-shopping-basket"></i>
-              </svg>
-              <span id="cart_total">0</span>
-            </a>
-           </div>
-        </nav>
+          </div>
+        </div>
       </div>
-    </div>
+    </nav>
+    <!--End Navbar-->
 
 
     <!--Hero Area-->
@@ -145,7 +126,7 @@
         <div class="collection_container">
           <div class="collection_box">
             <div class="img_container">
-              <img src="/Image/HP laptop.jpeg" alt="" class="collection_02">
+              <img src="/Image/HP_laptop.png" alt="" class="collection_02">
             </div>
             <div class="collection_content">
               <div class="collection_data">
@@ -172,7 +153,290 @@
         </div>
       </div>
     </section>
+
+      <!--Latest Product-->
+      <div id="product-category-container">
+        <div id="product-category-text">
+          <span class="blue-line"></span>
+          <span class="section-category-text">Latest Product</span>
+        </div>
+        <div id="product-category-wrapper">
+          <div class="product-categoty">
+            <div class="product-category-image-section">
+              <img src="Image/Black_Laptop-removebg-preview.png" alt="image category product">
+            </div>
+            <div class="product-category-desc-section">
+              <span class="product-category-type">
+                Dell Alienware
+              </span>
+              <span class="product-category-number">
+                View More
+              </span>
+            </div>
+          </div>
+          <div class="product-categoty">
+            <div class="product-category-image-section">
+              <img src="Image/Hp_laptop1-removebg-preview.png" alt="image category product">
+            </div>
+            <div class="product-category-desc-section">
+              <span class="product-category-type">
+                HP LAPTOP
+              </span>
+              <span class="product-category-number">
+                View More
+              </span>
+            </div>
+          </div>
+          <div class="product-categoty">
+            <div class="product-category-image-section">
+              <img src="Image/Mackbook.png" alt="image category product">
+            </div>
+            <div class="product-category-desc-section">
+              <span class="product-category-type">
+                MACKBOOK
+              </span>
+              <span class="product-category-number">
+                View More
+              </span>
+            </div>
+          </div>
+          <div class="product-categoty">
+            <div class="product-category-image-section">
+              <img src="Image/Microsoft_Laptop-removebg-preview (1).png" alt="image category product">
+            </div>
+            <div class="product-category-desc-section">
+              <span class="product-category-type">
+                MICROSOFT LAPTOP
+              </span>
+              <span class="product-category-number">
+                View More
+              </span>
+            </div>
+          </div>
+          <div class="product-categoty">
+            <div class="product-category-image-section">
+              <img src="Image/HP_Spectre_x360-removebg-preview.png" alt="image category product">
+            </div>
+            <div class="product-category-desc-section">
+              <span class="product-category-type">
+                HP LAPTOP
+              </span>
+              <span class="product-category-number">
+                View More
+              </span>
+            </div>
+          </div>
+          <div class="product-categoty">
+            <div class="product-category-image-section">
+              <img src="Image/Laptop_With_Flower-removebg-preview.png" alt="image category product">
+            </div>
+            <div class="product-category-desc-section">
+              <span class="product-category-type">
+                HP LAPTOP
+              </span>
+              <span class="product-category-number">
+                View More
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End of latext product-->
+
+      <!--product card-->
+      <div class="product-section" id="product-section-all">
+        <div class="product-section-top-container">
+          <div class="section-category-container">
+            <div class="section-category-type">
+            <span class="blue-line"></span>
+            <span class="section-category-text">More Product</span>
+          </div>
+            <h1>Explore Best Sellers</h1>
+          </div>
+          <div class="slideshow-buttons-container" data-slideshow="all">
+              <button class="slideshow-button prev-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                </svg>
+              </button>
+              <button class="slideshow-button next-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                </svg>
+              </button>
+          </div>
+        </div>
+
+        <div class="product-cards-container">
+          <ul>
+            <li class="product-card">
+              <div class="product-image-container">
+                <img src="Image/More pictures/Best_Laptop_for_Programming__TOP-30_Laptops_for_Coding___Programming_in_2023_-_ByteScout-removebg-preview.png" alt="">
+                <button class="heart-button">
+                  <svg viewBox="0 0 24 24" width="22px" height="22px"  xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z" stroke="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </button>
+              </div>
+              <div class="product-text-container">
+                <h1>Zenbook</h1>
+                <P>$87.99</P>
+                <button class="blue-button">
+                  Add to cart
+                </button>
+              </div>
+            </li>
+            <li class="product-card">
+              <div class="product-image-container">
+                <img src="Image/More pictures/f38afaf6-cfa7-4d66-a5b9-04969eb291ba-removebg-preview.png" alt="">
+                <button class="heart-button">
+                  <svg viewBox="0 0 24 24" width="22px" height="22px"  xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z" stroke="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </button>
+              </div>
+              <div class="product-text-container">
+                <h1>Zenbook</h1>
+                <P>$87.99</P>
+                <button class="blue-button">
+                  Add to cart
+                </button>
+              </div>
+            </li>
+            <li class="product-card">
+              <div class="product-image-container">
+                <img src="Image/HP_laptop.png" alt="">
+                <button class="heart-button">
+                  <svg viewBox="0 0 24 24" width="22px" height="22px"  xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z" stroke="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </button>
+              </div>
+              <div class="product-text-container">
+                <h1>HP Spectre</h1>
+                <P>$234.99</P>
+                <button class="blue-button">
+                  Add to cart
+                </button>
+              </div>
+            </li>
+            <li class="product-card">
+              <div class="product-image-container">
+                <img src="Image/More pictures/Latest_Alienware_range_brings_powerful_M18X_laptop-removebg-preview.png" alt="">
+                <button class="heart-button">
+                  <svg viewBox="0 0 24 24" width="22px" height="22px"  xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z" stroke="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </button>
+              </div>
+              <div class="product-text-container">
+                <h1>Alienware</h1>
+                <P>$258.99</P>
+                <button class="blue-button">
+                  Add to cart
+                </button>
+              </div>
+            </li>
+
+            
+            
+          </ul>
+        </div>
+      </div>
+      <div class="product-section" id="product-section-all">
+        <div class="product-section-top-container">
+          <div class="section-category-container">
+            <div class="section-category-type">
+            <span class="blue-line"></span>
+            <span class="section-category-text">More Product</span>
+          </div>
+            <h1>Discover Our 2In1 laptops</h1>
+          </div>
+          <div class="slideshow-buttons-container" data-slideshow="all">
+              <button class="slideshow-button prev-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                </svg>
+              </button>
+              <button class="slideshow-button next-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                </svg>
+              </button>
+          </div>
+        </div>
+
+        <div class="product-cards-container">
+          <ul>
+            <li class="product-card">
+              <div class="product-image-container">
+                <img src="Image/More pictures/Lenovo_Ideapad_Flex_5-removebg-preview.png" alt="">
+                <button class="heart-button">
+                  <svg viewBox="0 0 24 24" width="22px" height="22px"  xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z" stroke="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </button>
+              </div>
+              <div class="product-text-container">
+                <h1>Lenovo</h1>
+                <P>$87.99</P>
+                <button class="blue-button">
+                  Add to cart
+                </button>
+              </div>
+            </li>
+            <li class="product-card">
+              <div class="product-image-container">
+                <img src="Image/More pictures/Графический_планшет_Huion_Kamvas_13__AG_стеклянная_ручка__экран_для_рисования__8192_стилус_без_батареи_для_Android__Windows__MacOS_на_AliExpress-removebg-preview.png" alt="">
+                <button class="heart-button">
+                  <svg viewBox="0 0 24 24" width="22px" height="22px"  xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z" stroke="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </button>
+              </div>
+              <div class="product-text-container">
+                <h1>Lenovo</h1>
+                <P>$87.99</P>
+                <button class="blue-button">
+                  Add to cart
+                </button>
+              </div>
+            </li>
+            <li class="product-card">
+              <div class="product-image-container">
+                <img src="Image/More pictures/HP___Spectre__13-4128TU_core_i7-6Th_8gb_ram_512SSD_X360_Touch_Screen__used_like_new-removebg-preview.png" alt="">
+                <button class="heart-button">
+                  <svg viewBox="0 0 24 24" width="22px" height="22px"  xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z" stroke="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </button>
+              </div>
+              <div class="product-text-container">
+                <h1>HP Spectre</h1>
+                <P>$234.99</P>
+                <button class="blue-button">
+                  Add to cart
+                </button>
+              </div>
+            </li>
+            <li class="product-card">
+              <div class="product-image-container">
+                <img src="Image/More pictures/Laptop_Buying_Guide_____Shopping_for_a_laptop_-removebg-preview.png" alt="">
+                <button class="heart-button">
+                  <svg viewBox="0 0 24 24" width="22px" height="22px"  xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z" stroke="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </button>
+              </div>
+              <div class="product-text-container">
+                <h1>Alienware</h1>
+                <P>$258.99</P>
+                <button class="blue-button">
+                  Add to cart
+                </button>
+              </div>
+            </li>
+
+            
+            
+          </ul>
+        </div>
+      </div>
+
   </main>
+
+    <!--latest Products
+    <section class="section latest_products" id="latest">
+      <div class="title_container">
+        <div class="section_title active" data-id="latest products">
+          <span class="dot"></span>
+          <h1 class="primary_title">latest Products</h1>
+        </div>
+      </div>-->
 
   <!--Glide on scroll-->
   <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
