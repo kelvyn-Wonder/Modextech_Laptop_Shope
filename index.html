@@ -15,6 +15,9 @@
 <!--Glide js-->
 <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
 
+<!--Slider-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
 
 <!--Animate on scroll-->
@@ -37,18 +40,18 @@
               </a>
             </li>
             <li>
-              <a href="#">
-                Products
-              </a>
-            </li>
-            <li>
-              <a href="#">
+              <a href="service.html">
                 Services
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="About us.html">
                 About
+              </a>
+            </li>
+            <li>
+              <a href="Contact.html">
+                Contact
               </a>
             </li>
           </ul>
@@ -97,23 +100,6 @@
         </ul>
       </div>
 
-      <div class="glide__bullets" data-glide-el="controls[nav]">
-        <button class="glide__bullet" data-glide-dir="=0"></button>
-        <button class="glide__bullet" data-glide-dir="=1"></button>
-      </div>
-
-      <div class="glide__arrows" data-glide-el="controls">
-        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-          <svg>
-            <i class="fa-solid fa-arrow-left"></i>
-          </svg>
-        </button>
-        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-          <svg>
-            <i class="fa-solid fa-arrow-right"></i>
-          </svg>
-        </button>
-      </div>
     </div>
    </div>
   </header>
@@ -124,7 +110,7 @@
     <section class="section collection" id="collection">
       <div class="container">
         <div class="collection_container">
-          <div class="collection_box">
+          <div class="collection_box box_1">
             <div class="img_container">
               <img src="/Image/HP_laptop.png" alt="" class="collection_02">
             </div>
@@ -138,7 +124,7 @@
           </div>
 
 
-          <div class="collection_box">
+          <div class="collection_box box_2">
             <div class="img_container">
               <img src="/Image/Laptop.png" alt="" class="collection_02">
             </div>
@@ -251,7 +237,7 @@
             <span class="blue-line"></span>
             <span class="section-category-text">More Product</span>
           </div>
-            <h1>Explore Best Sellers</h1>
+            <h1 class="section-title">Explore Best Sellers</h1>
           </div>
           <div class="slideshow-buttons-container" data-slideshow="all">
               <button class="slideshow-button prev-button">
@@ -335,6 +321,8 @@
           </ul>
         </div>
       </div>
+
+      <!--2in1 laptops section-->
       <div class="product-section" id="product-section-all">
         <div class="product-section-top-container">
           <div class="section-category-container">
@@ -342,7 +330,7 @@
             <span class="blue-line"></span>
             <span class="section-category-text">More Product</span>
           </div>
-            <h1>Discover Our 2In1 laptops</h1>
+            <h1 class="section-title">Discover Our 2In1 laptops</h1>
           </div>
           <div class="slideshow-buttons-container" data-slideshow="all">
               <button class="slideshow-button prev-button">
@@ -427,19 +415,225 @@
         </div>
       </div>
 
+
+      <!--Promotion Section-->
+      <div class="promotion-section">
+        <div class="promo-image-container">
+          <img src="Image/More pictures/HP_14s-dq2575TU-removebg-preview-removebg-preview (1).png" alt="">
+        </div>
+        <div class="promo-text-container">
+         <div class="promo-heading">
+          <span class="blue-line"></span>
+          <h1 class="section-category-text">New collection</h1>
+         </div>
+         <h2>Buy Now, Get 10% Off Limited time offer.</h2>
+         <p>Exclusive Deals on Laptops!
+          Upgrade your tech game with our limited-time offers. Get the best laptops at unbeatable prices – whether you're working, gaming, or streaming. Hurry, stocks are limited! Shop now and save big!</p>
+         <button class="blue-button">
+          Shop Now  <i class="fas fa-angle-right"></i>
+         </button>
+        </div>
+      </div>
+      <!--End Promotion Section-->
+      
+      <!--Ipad Section-->
+      <section class="product-slider">
+
+        <div class="product-section-top-container">
+          <div class="section-category-container black-container">
+            <div class="section-category-type">
+            <span class="blue-line"></span>
+            <span class="section-category-text">More Product</span>
+          </div>
+            <h1 class="section-title">Discover Our IPADs</h1>
+          </div>
+          
+        </div>
+        <ul id="autoWidth" class="cs-hidden">
+
+          <!--Card1-->
+          <li class="item-a">
+            <div class="product-box">
+              <a href="#">
+                <strong>Ipad 10</strong>
+                <img src="Image/ipad4-removebg-preview.png" alt="">
+                <div class="available-colors">
+                  <div class="product-color" style="background-color: #5c5b58;"></div>
+                  <div class="product-color" style="background-color: #e5e6e2;"></div>
+                  <div class="product-color" style="background-color: #fcebd5;"></div>
+                  <div class="product-color" style="background-color: #3f5d6a;"></div>
+                </div>
+                <div class="buy-price">
+                  <p>From $999 or $41.62/mo. for 24 mo. before trade</p>
+                  <a href="" class="buy-btn">SHOP</a>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <!--card2-->
+          <li class="item-a">
+            <div class="product-box">
+              <a href="#">
+                <strong>Ipad 11</strong>
+                <img src="Image/ipad2-removebg-preview.png" alt="">
+                <div class="available-colors">
+                  <div class="product-color" style="background-color: #5c5b58;"></div>
+                  <div class="product-color" style="background-color: #e5e6e2;"></div>
+                  <div class="product-color" style="background-color: #fcebd5;"></div>
+                  <div class="product-color" style="background-color: #3f5d6a;"></div>
+                </div>
+                <div class="buy-price">
+                  <p>From $999 or $41.62/mo. for 24 mo. before trade</p>
+                  <a href="" class="buy-btn">SHOP</a>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <!--card3-->
+          <li class="item-a">
+            <div class="product-box">
+              <a href="#">
+                <strong>Ipad 12</strong>
+                <img src="Image/ipad-removebg-preview.png" alt="">
+                <div class="available-colors">
+                  <div class="product-color" style="background-color: #5c5b58;"></div>
+                  <div class="product-color" style="background-color: #e5e6e2;"></div>
+                  <div class="product-color" style="background-color: #fcebd5;"></div>
+                  <div class="product-color" style="background-color: #3f5d6a;"></div>
+                </div>
+                <div class="buy-price">
+                  <p>From $999 or $41.62/mo. for 24 mo. before trade</p>
+                  <a href="" class="buy-btn">SHOP</a>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <!--card4-->
+          <li class="item-a">
+            <div class="product-box">
+              <a href="#">
+                <strong>Ipad 13</strong>
+                <img src="Image/ipad3-removebg-preview.png" alt="">
+                <div class="available-colors">
+                  <div class="product-color" style="background-color: #5c5b58;"></div>
+                  <div class="product-color" style="background-color: #e5e6e2;"></div>
+                  <div class="product-color" style="background-color: #fcebd5;"></div>
+                  <div class="product-color" style="background-color: #3f5d6a;"></div>
+                </div>
+                <div class="buy-price">
+                  <p>From $999 or $41.62/mo. for 24 mo. before trade</p>
+                  <a href="" class="buy-btn">SHOP</a>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <!--card5-->
+          <li class="item-a">
+            <div class="product-box">
+              <a href="#">
+                <strong>Ipad 14</strong>
+                <img src="Image/More pictures/Графический_планшет_Huion_Kamvas_13__AG_стеклянная_ручка__экран_для_рисования__8192_стилус_без_батареи_для_Android__Windows__MacOS_на_AliExpress-removebg-preview.png" alt="">
+                <div class="available-colors">
+                  <div class="product-color" style="background-color: #5c5b58;"></div>
+                  <div class="product-color" style="background-color: #e5e6e2;"></div>
+                  <div class="product-color" style="background-color: #fcebd5;"></div>
+                  <div class="product-color" style="background-color: #3f5d6a;"></div>
+                </div>
+                <div class="buy-price">
+                  <p>From $999 or $41.62/mo. for 24 mo. before trade</p>
+                  <a href="" class="buy-btn">SHOP</a>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+     
   </main>
 
-    <!--latest Products
-    <section class="section latest_products" id="latest">
-      <div class="title_container">
-        <div class="section_title active" data-id="latest products">
-          <span class="dot"></span>
-          <h1 class="primary_title">latest Products</h1>
-        </div>
-      </div>-->
+  <!--Footer Start here-->
+  <footer class="footer-container">
+    <div class="container-first-group">
+      <div class="footer-logo">
+        <img src="Logo1.png" alt="Footer Logo">
+      </div>
+      <p class="first-paragraph">
+        Empowering Businesses and Individuals with Innovative IT Solutions
+      </p>
+      <h2 class="subcribe-text">
+        Subcribe Now
+      </h2>
+      <div class="footer-form">
+        <i class="fa-solid fa-envelope" style="font-size: 20px;"></i>
+        <input type="text" placeholder="Enter Your Mail">
+      </div>
+      <button class="subcribe-btn">
+        Subcribe
+      </button>
+    </div>
 
+    <div class="container-second-group">
+      <h2 class="second-title">Information</h2>
+      <li class="first-list">
+        <a href="#">Home</a>
+        <a href="#">Service</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+      </li>
+    </div>
+
+    <div class="container-second-group">
+      <h2 class="second-title">Helpful Links</h2>
+      <li class="first-list">
+        <a href="#">Service</a>
+        <a href="#">Support</a>
+        <a href="#">Terms & COndition</a>
+        <a href="#">Privacy Policy</a>
+      </li>
+    </div>
+
+    <div class="container-second-group">
+      <h2 class="second-title">Our Service</h2>
+      <li class="first-list">
+        <a href="#">Computer Sales and Customization</a>
+        <a href="#">IT Support and Maintenance</a>
+        <a href="#">Hardware and Software Upgrades</a>
+        <a href="#">Data Recovery and Backup Solutions</a>
+      </li>
+    </div>
+
+    <div class="container-last-group">
+      <h2 class="last-group-tittle">Contact Us</h2>
+      <div class="contact">
+        <span class="number"><i class="fa-solid fa-phone-volume"></i> 0551870049</span>
+        <span><i class="fa-solid fa-envelope"></i>tawiahandrews054@gmail.com</span>
+      </div>
+      <div class="socia-media-icons">
+        <i class="fa-brands fa-facebook" style="color: blue;"></i>
+        <i class="fa-brands fa-instagram" style="color: rgb(250, 120, 142);"></i>
+        <i class="fa-brands fa-linkedin" style="color: rgb(108, 108, 255);"></i>
+        <i class="fa-brands fa-tiktok" style="color: rgb(233, 233, 233);"></i>
+
+      </div>
+    </div>
+    <div class="footer_bar">
+      <p>Copyright ©2024 All rights reserved | This template is made with ❤ by <span><a href="#" style="color: var(--yellow);">StrivDev</a></span></p>
+    </div>
+  </footer>
+
+
+  <!--Footer Ends here-->
+
+  <script src="https://unpkg.com/scrollreveal"></script>
   <!--Glide on scroll-->
   <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <!--Lightslider-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
   <!--Animate on scrool-->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="/js/index.js"></script>
