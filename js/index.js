@@ -48,3 +48,19 @@ ScrollReveal().reveal(".hero_img-container img",{
   origin:"bottom",
  });
  
+ //Menu Bar
+ let menuBar = document.querySelector('#menu-bar');
+ let menuPage = document.querySelector('#menu-page');
+ let html = document.querySelector('html');
+
+ //show and hide menu bar
+ menuBar.addEventListener('click', () => {
+    menuPage.classList.toggle('active');
+
+    if (menuPage.classList.contains('active')){
+      html.style.overflow = "hidden"
+    }
+    else {
+      html.style.overflow = "scroll"
+    }
+ })
