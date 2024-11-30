@@ -47,6 +47,25 @@ ScrollReveal().reveal(".hero_img-container img",{
   ...scrollRevealOpton,
   origin:"bottom",
  });
+
+ //Navigation scroling Effect
+ let navbar = document.querySelector('nav');
+
+ document.addEventListener('scroll', () => {
+  navScroll(false)
+ })
+
+ function navScroll(result) {
+  //if the user currently viewing menu page
+  if (window,scrollY > 0 && !(result)) {
+    navbar.style.boxShadow = '0 5px 20px rgba(190, 190, 190, 0.15)';
+    navbar.style.backgroundColor = 'white'
+  }
+  else {
+    navbar.style.boxShadow = 'none'
+    navbar.style.backgroundColor = 'transparent'
+  }
+ }
  
  //Menu Bar
  let menuBar = document.querySelector('#menu-bar');
@@ -63,4 +82,5 @@ ScrollReveal().reveal(".hero_img-container img",{
     else {
       html.style.overflow = "scroll"
     }
+    
  })
