@@ -344,6 +344,70 @@ text-align: center;
 
 }
 
+@media only screen and (max-width:500px){
+  .hero{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero_left p {
+    display: none;
+  }
+  .hero_left img{
+    width: 100%;
+    padding-top: 0;
+  }
+  .hero_btn{
+    padding: 1.5rem 2.2rem;
+  }
+  .hero .glide__arrows{
+    display: none;
+  }
+
+  .hero_left h1 {
+    font-size: 3rem;
+   text-wrap: wrap;
+   position: relative;
+   top: 20px;
+    letter-spacing: 1px;
+  }
+
+  .hero_left a button {
+    margin-top: 2rem;
+  } 
+
+  .collection{
+    display: none;
+  }
+
+ #product-category-container{
+  padding-top: 50px;
+ }
+
+  #product-category-container h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  #product-category-container ul{
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  #product-category-container ul li{
+    margin-bottom: 1rem;
+  }
+
+  .slideshow-buttons-container button{
+    display: none;
+  }
+
+}
+
 @media only screen and (max-width: 999px){
   .hero_center{
     flex-direction: column;
@@ -1022,6 +1086,197 @@ span.dot::before{
   background-color: var(--secondaryColor);
   color: var(--black);
 }
+
+
+
+.promotion-section {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 500px;
+  margin: 110px auto;
+  box-shadow: 0 10px 40px rgba(176, 176, 176, 0.4);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.promo-image-container {
+  width: calc(570px - 100px);
+  padding: 0 50px;
+  height: 100%;
+  background-color: var(--primaryColor);
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+.promo-image-container img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.promo-image-container img:hover {
+  animation: shake 0.5s linear infinite;
+  cursor: pointer;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.promo-text-container {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  padding: 0 80px;
+  flex: 1;
+  align-items: start;
+}
+
+.promo-heading {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 7px;
+}
+
+.promo-heading h1 {
+  color: var(--black2);
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.promo-text-container h2 {
+  color: var(--black3);
+  font-weight: 500;
+  font-size: 37px;
+  margin-top: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.promo-text-container p {
+  width: 100%;
+  color: var(--grey2);
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  margin: 10px 0;
+}
+
+.promo-text-container .blue-button {
+  margin-top: 12px;
+  padding: 15px 35px;
+  border-radius: 3px;
+  font-size: 20px;
+  background-color: var(--black);
+  color: white;
+}
+
+.promo-text-container .blue-button:hover {
+  margin-top: 12px;
+  padding: 15px 35px;
+  border-radius: 3px;
+  font-size: 20px;
+  background-color: var(--secondaryColor);
+  color: var(--black);
+}
+
+/* Media Queries for Responsiveness */
+
+/* For Tablets */
+@media (max-width: 768px) {
+  .promotion-section {
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+  }
+
+  .promo-image-container {
+    width: 100%;
+    padding: 0;
+    height: 50%;
+  }
+
+  .promo-text-container {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    height: 50%;
+  }
+
+  .promo-heading h1 {
+    font-size: 22px;
+  }
+
+  .promo-text-container h2 {
+    font-size: 30px;
+  }
+
+  .promo-text-container p {
+    font-size: 18px;
+  }
+
+  .promo-text-container .blue-button {
+    font-size: 18px;
+    padding: 12px 25px;
+  }
+}
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+  .promotion-section {
+    flex-direction: column;
+    height: auto;
+    width: 80%;
+    padding: 0;
+  }
+
+  .promo-image-container {
+    width: 100%;
+    padding: 0;
+    height: 50%;
+  }
+
+  .promo-text-container {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    height: auto;
+  }
+
+  .promo-heading h1 {
+    font-size: 20px;
+  }
+
+  .promo-text-container h2 {
+    font-size: 24px;
+  }
+
+  .promo-text-container p {
+    display: none;
+  }
+
+  .promo-text-container .blue-button {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+}
+
 
 
 
