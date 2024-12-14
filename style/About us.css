@@ -62,3 +62,40 @@
   font-size: 20px;
   font-family: sans-serif;
 }
+
+@media (max-width: 768px) {
+  #about-us{
+    position: relative;
+    right: 80px;
+  }
+  .about-us-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about-us-text{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 20px 0;
+    position: relative;
+    
+  }
+  .ceo-infor{
+    position: relative;
+    top: -400px;
+    padding: 30px 0;
+  }
+  .image-side-about img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+    position: relative;
+    top: 50px;
+  }
+}
